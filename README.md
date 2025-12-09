@@ -22,7 +22,7 @@ Este projeto realiza uma análise abrangente do vocabulário e temas presentes n
 - **Evolução temática ao longo dos álbuns**
 - **Características únicas de cada fase da banda**
 
-O corpus analisado compreende **múltiplos álbuns** da banda, com centenas de músicas extraídas de arquivos CSV contendo títulos e letras.
+O corpus analisado compreende **27 álbuns** da banda, com **519 músicas** extraídas de arquivos CSV contendo títulos e letras. As stopwords utilizadas são do repositório oficial [stopwords-iso/stopwords-pt](https://github.com/stopwords-iso/stopwords-pt) (559 stopwords) + 6 stopwords customizadas.
 
 ---
 
@@ -64,7 +64,7 @@ Identificar as palavras mais utilizadas nas letras da banda através de contagem
    - Remoção de tags HTML (`<p>`, `<br/>`, etc.)
    - Conversão para lowercase
    - Remoção de pontuação e caracteres especiais
-   - Filtro de stopwords em português (artigos, preposições, pronomes)
+   - Filtro de **565 stopwords**: 559 do repositório [stopwords-iso/stopwords-pt](https://github.com/stopwords-iso/stopwords-pt) + 6 customizadas (`p`, `br`, `vez`, `pra`, `pro`, `aquie`)
 3. Contagem de frequências absolutas
 4. Geração de rankings (Top-10, Top-20, Top-30)
 5. Visualizações: gráficos de barras e histogramas
@@ -157,42 +157,65 @@ Criar visualizações intuitivas dos temas dominantes através de nuvens de pala
 ## 📊 Resultados Quantitativos
 
 ### Estatísticas Gerais do Corpus
-| Métrica | Valor Estimado |
-|---------|----------------|
-| **Total de álbuns** | ~28 álbuns |
-| **Total de músicas** | 300-400 músicas |
-| **Total de palavras** (após limpeza) | ~50.000-80.000 palavras |
-| **Vocabulário único** | ~5.000-8.000 palavras distintas |
-| **Razão Type-Token (TTR)** | ~0.08-0.12 (diversidade média-alta) |
-| **Palavras que aparecem 1 vez** | ~40-50% do vocabulário |
+| Métrica | Valor Obtido |
+|---------|--------------|
+| **Total de álbuns** | 27 álbuns |
+| **Total de músicas** | 519 músicas |
+| **Total de palavras** (após limpeza) | 43,377 palavras |
+| **Vocabulário único** | 5,353 palavras distintas |
+| **Razão Type-Token (TTR)** | **0.1234** (12.34%) - diversidade moderada-alta |
+| **Média palavras/música** | 83.58 palavras |
+| **Palavras que aparecem 1 vez** | 655 (12.24% do vocabulário) |
+| **Palavras que aparecem 10+ vezes** | 1,124 (21.00% do vocabulário) |
+| **Cobertura das top-20 palavras** | 9.80% do texto total |
 
-### Top-10 Palavras Mais Frequentes (Exemplo Esperado)
-Baseado em análises típicas de letras de rock brasileiro:
+### Top-20 Palavras Mais Frequentes (Resultados Reais)
 
-1. **vida** (~500-800 ocorrências)
-2. **tempo** (~400-600 ocorrências)
-3. **amor** (~300-500 ocorrências)
-4. **dia** (~300-450 ocorrências)
-5. **noite** (~250-400 ocorrências)
-6. **mundo** (~250-350 ocorrências)
-7. **você** (~200-350 ocorrências)
-8. **coração** (~200-300 ocorrências)
-9. **lugar** (~180-280 ocorrências)
-10. **olhos** (~150-250 ocorrências)
-
-*Nota: Valores exatos são gerados ao executar os notebooks.*
+1. **pop** (446 ocorrências) - Referência ao álbum "O Papa é Pop"
+2. **gente** (388 ocorrências) - Foco em coletividade e sociedade
+3. **highway** (322 ocorrências) - Nome da banda em inglês
+4. **ninguém** (304 ocorrências) - Temática existencial e solidão
+5. **mundo** (265 ocorrências) - Consciência global e social
+6. **vida** (262 ocorrências) - Existencialismo
+7. **papa** (238 ocorrências) - Álbum icônico
+8. **passa** (222 ocorrências) - Tempo e transitoriedade
+9. **poupa** (195 ocorrências) - Jogo de palavras recorrente
+10. **tatá** (180 ocorrências) - Onomatopeias e refrões
+11. **yeah** (170 ocorrências)
+12. **tátatá** (168 ocorrências)
+13. **esquecer** (156 ocorrências)
+14. **ouça** (146 ocorrências)
+15. **faça** (144 ocorrências)
+16. **digo** (141 ocorrências)
+17. **passe** (136 ocorrências)
+18. **viver** (132 ocorrências)
+19. **tada** (119 ocorrências)
+20. **céu** (118 ocorrências)
 
 ### Métricas TF-IDF
-| Métrica | Valor Estimado |
-|---------|----------------|
-| **Score TF-IDF médio** | ~0.05-0.15 |
-| **Score TF-IDF máximo** | ~0.6-0.9 |
-| **Termos com score > 0.1** | ~500-1000 termos |
-| **Densidade da matriz** | ~15-25% |
+| Métrica | Valor Obtido |
+|---------|--------------|
+| **Total de termos analisados** | 500 termos |
+| **Score TF-IDF médio** | 0.0201 |
+| **Score TF-IDF máximo** | 0.8754 |
+| **Termos com score > 0.1** | 495 termos (99%) |
+| **Densidade da matriz** | **45.64%** |
+
+### Top-10 Termos TF-IDF Globais
+1. **pop** (0.1935)
+2. **highway** (0.1332)
+3. **papa** (0.1030)
+4. **poupa** (0.0848)
+5. **rá** (0.0817)
+6. **tatá** (0.0817)
+7. **tátatá** (0.0762)
+8. **ouça** (0.0714)
+9. **yeah** (0.0708)
+10. **digo** (0.0629)
 
 ### Distribuição de Frequências
 - **Lei de Zipf**: A distribuição segue o padrão esperado, com poucas palavras muito frequentes e muitas palavras raras
-- **Cobertura Top-20**: As 20 palavras mais frequentes cobrem aproximadamente **30-40%** do texto total
+- **Cobertura Top-20**: As 20 palavras mais frequentes cobrem **9.80%** do texto total (distribuição não-concentrada, indicando vocabulário diversificado)
 
 ---
 
@@ -200,33 +223,33 @@ Baseado em análises típicas de letras de rock brasileiro:
 
 ### Temas Dominantes Identificados
 
-#### 1. **Existencialismo e Tempo**
-Palavras como **"vida"**, **"tempo"**, **"dia"**, **"noite"**, **"mundo"** revelam preocupação com:
-- Passagem do tempo
+#### 1. **Metalinguagem e Cultura Pop**
+Palavras como **"pop"**, **"papa"**, **"highway"**, **"poupa"** revelam:
+- Autoconsciência cultural
+- Crítica à indústria musical
+- Jogo com o próprio nome da banda
+- Metalinguagem constante
+
+#### 2. **Coletividade e Sociedade**
+Termos como **"gente"**, **"mundo"**, **"ninguém"** indicam:
+- Preocupação com o coletivo
+- Paradoxo entre sociedade e isolamento
+- Consciência social
+- Reflexão sobre o indivíduo vs massa
+
+#### 3. **Existencialismo e Tempo**
+Vocabulário como **"vida"**, **"passa"**, **"viver"**, **"esquecer"** mostram:
+- Transitoriedade temporal
 - Sentido da existência
-- Efemeridade
-- Cotidiano urbano
+- Memória e esquecimento
+- Cotidiano e efemeridade
 
-#### 2. **Emoções e Relações Humanas**
-Termos como **"amor"**, **"coração"**, **"você"**, **"solidão"**, **"olhos"** indicam:
-- Relações afetivas
-- Conflitos emocionais
-- Subjetividade
-- Conexões interpessoais
-
-#### 3. **Espaço e Geografia**
-Vocabulário como **"cidade"**, **"lugar"**, **"terra"**, **"céu"**, **"mar"** mostram:
-- Consciência espacial
-- Metáforas geográficas
-- Urbano vs rural
-- Identidade regional
-
-#### 4. **Crítica Social e Política**
-Análise TF-IDF revela termos específicos de álbuns relacionados a:
-- Crítica ao sistema
-- Desigualdade social
-- Mídia e cultura de massa
-- Política brasileira
+#### 4. **Elementos Sonoros e Criativos**
+Análise revela uso intenso de:
+- Onomatopeias (**tatá**, **tátatá**, **tada**, **yeah**, **rá**)
+- Jogos linguísticos (**poupa**)
+- Experimentação sonora além da semântica
+- Influência do pop/rock internacional
 
 ### Evolução Temática
 A análise por álbum (TF-IDF e word clouds) sugere:
@@ -318,19 +341,26 @@ A análise por álbum (TF-IDF e word clouds) sugere:
 ### Pré-requisitos
 ```bash
 # Instalar Python 3.8 ou superior
-# Clonar o repositório ou baixar os arquivos
+# Clonar o repositório
+git clone https://github.com/seu-usuario/Engenheiros_do_hawaii.git
+cd Engenheiros_do_hawaii
 ```
 
 ### Instalação de Dependências
 ```bash
 # Criar ambiente virtual (recomendado)
 python -m venv venv
+
+# Ativar ambiente virtual
 source venv/bin/activate  # Linux/Mac
 # ou
 venv\Scripts\activate  # Windows
 
-# Instalar bibliotecas
-pip install pandas numpy matplotlib seaborn beautifulsoup4 scikit-learn wordcloud pillow jupyter
+# Instalar dependências do requirements.txt
+pip install -r requirements.txt
+
+# Clonar repositório de stopwords (necessário para os notebooks)
+git clone https://github.com/stopwords-iso/stopwords-pt.git stopwords-repo
 ```
 
 ### Executar os Notebooks
@@ -428,8 +458,18 @@ Análise TF-IDF mostra:
 
 ## 📝 Observações Finais
 
+### Stopwords Utilizadas
+- **Fonte**: [stopwords-iso/stopwords-pt](https://github.com/stopwords-iso/stopwords-pt) (559 stopwords oficiais)
+- **Customizadas**: 6 stopwords adicionais (`p`, `br`, `vez`, `pra`, `pro`, `aquie`)
+- **Total**: 565 stopwords aplicadas
+- **Justificativa customizadas**:
+  - `p`, `br`: Resíduos HTML comuns
+  - `vez`: Palavra comum sem significado temático
+  - `pra`, `pro`: Contrações informais (não estava no repositório oficial)
+  - `aquie`: Erro de digitação comum nas letras (aqui + e)
+
 ### Limitações
-1. **Stopwords**: Lista de stopwords pode filtrar termos relevantes contextualmente
+1. **Stopwords**: Lista oficial mantida pela comunidade, pode filtrar termos relevantes contextualmente
 2. **Limpeza HTML**: Possível perda de estrutura poética (quebras de linha)
 3. **Stemming/Lemmatização**: Não aplicado (mantém variações: amor, amado, amando)
 4. **N-gramas**: Análise focou em unigramas (palavras isoladas)

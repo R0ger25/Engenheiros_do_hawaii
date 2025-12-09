@@ -98,9 +98,9 @@ stopwords-repo/
 # letras_engenheiros_hawaii/*.csv
 
 # Generated images (opcional - remova se quiser versionar as imagens geradas)
-# *.png
-# *.jpg
-# *.jpeg
+*.png
+*.jpg
+*.jpeg
 
 # Python scripts auxiliares temporários
 scratch_*.py
