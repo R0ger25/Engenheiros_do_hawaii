@@ -1,0 +1,139 @@
+# Python Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# PyCharm
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Environments
+.env
+.env.local
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.~*
+
+# Logs
+*.log
+logs/
+*.out
+
+# Stopwords repository (clone local, não é parte do projeto)
+stopwords-repo/
+
+# Backup files
+*.bak
+*.backup
+*_backup.*
+
+# Large data files (opcional - remova se quiser versionar os CSVs)
+# *.csv
+# letras_engenheiros_hawaii/*.csv
+
+# Generated images (opcional - remova se quiser versionar as imagens geradas)
+# *.png
+# *.jpg
+# *.jpeg
+
+# Python scripts auxiliares temporários
+scratch_*.py
+test_*.py
+debug_*.py
+
+# Editor backup files
+*~
+\#*\#
+.#*
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Pylint
+.pylint.d/
+
+# rope project settings
+.ropeproject
+
+# SQLite databases (caso use)
+*.db
+*.sqlite
+*.sqlite3
+
+# Compressed files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z

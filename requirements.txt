@@ -1,0 +1,26 @@
+# Análise de Vocabulário - Engenheiros do Hawaii
+# Dependências Python
+
+# Core data manipulation
+pandas>=1.3.0
+numpy>=1.21.0
+
+# Visualization
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Text processing
+beautifulsoup4>=4.9.3
+
+# Machine Learning / NLP
+scikit-learn>=0.24.0
+
+# Word Cloud generation
+wordcloud>=1.8.1
+
+# Image processing
+Pillow>=8.3.0
+
+# Jupyter
+jupyter>=1.0.0
+notebook>=6.4.0
