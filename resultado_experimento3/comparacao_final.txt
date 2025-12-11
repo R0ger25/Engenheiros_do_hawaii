@@ -1,0 +1,69 @@
+==========================
+ COMPARAÇÃO ENTRE MODELOS 
+==========================
+
+▶ Total de caracteres das letras originais: 672897
+▶ Tamanho do texto do Modelo 1 (GPT-4): 989 caracteres
+▶ Tamanho do texto do Modelo 2 (LLaMA-3): 1183 caracteres
+
+======================================================
+SEMELHANÇAS (PARA O SEU RELATÓRIO):
+- Ambos usam metáforas
+- Ambos abordam temas existenciais
+- Ambos seguem vocabulário filosófico/poético
+
+======================================================
+DIFERENÇAS ENTRE AS LETRAS GERADAS
+
+--- Trechos presentes APENAS no GPT-4 ---
+A cidade respira fibra óptica e neon,
+Ansiedade em loops, difícil de escapar.
+Busca-se atenção como se fosse amor.
+Cada like é um fio que me prende a mim.
+Curto-circuito de esperanças, sonhos em cache,
+E no fim do dia, quando a tela se apaga,
+Em feeds e algoritmos, me perco e me acho,
+Entre notificações, entre mensagens e avisos,
+Entre notificações, meu pulso dispara,
+Entre zeros e uns, procuro ser inteiro,
+Entre “stories” e “streams”, o medo é desprazer.
+Memórias comprimidas em arquivos rasgados.
+Meu cérebro, um servidor sem refrão.
+Na ansiedade da era digital, sou passageiro.
+No metrô da mente, ninguém senta ao lado,
+O presente se fragmenta, o futuro me rasteja.
+O silêncio pesa, ecoa no servidor,
+O tempo é binário, zero e um a rodar,
+Pixels dançam no escuro, a mente se prepara.
+Procuro a calma que o Wi-Fi não sussurra.
+Rostos em tela, corações em atraso.
+Scroll infinito, fuga sem fim,
+Sinais elétricos substituem abraços,
+Sinto a solitude digital que ninguém mais nota.
+
+--- Trechos presentes APENAS no LLaMA-3 ---
+A ansiedade digital, uma doença contagiosa
+A não ser à espera da próxima atualização
+Aqui vai minha tentativa de escrever uma letra inspirada no estilo dos Engenheiros do Hawaii:
+De uma doença mais profunda, de uma perda de identidade
+Desconectados, sem um lugar para pertencer
+E a solidão é um bug que nunca é resolvido
+E assim nos tornamos escravos das notificações
+E nossas vidas são um fluxo constante de informações
+E o que acontece quando o sistema falha?
+Em linguagem de bits, o coração não se comunica
+Mas a ansiedade digital, ela é o sintoma
+Mas eu me pergunto: há um botão para parar?
+Mas eu me pergunto: há um programa que possa
+Mas no fundo, as preocupações são apenas
+Nos terminais, cumplicidades se estabelecem
+Nossa existência é um bug, um erro de compilação
+Ou é apenas um clique para nos tornarmos again?
+Ou é apenas uma questão de algoritmos e recursos?
+Ouvimos os gritos das conexões que falham
+Que nos faz crer que sempre podemos atualizar
+Que nos faz sentir como fragmentos de código
+Que precisa ser resolvido em tempo real
+Reprogramar a nossa alma, torná-la mais humana?
+Talvez seja o reflexo da velocidade do tempo
+Um loop infinito de inquietude e dúvida
